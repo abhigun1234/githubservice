@@ -7,7 +7,7 @@ import {GithubService} from '..//github.service'
   providers:[GithubService]
 })
 export class UserdetailsComponent implements OnInit {
-
+  public searchResult
   constructor(private github:GithubService) { }
 
   ngOnInit() {
@@ -19,6 +19,8 @@ export class UserdetailsComponent implements OnInit {
   {
 
     alert(response)
+    console.log(response)
+    this.searchResult=response;
   }
   )
     

@@ -1,0 +1,12 @@
+<p>
+  menuoftheday works!
+</p>
+<ol *ngIf="searchresult">
+   
+  <li  *ngFor="let menuoftheday of searchresult.menuDetails" >
+    
+    {{menuoftheday.itemname}}
+  </li>
+</ol>
+
+<button (click)="getMenuDetails()">click</button>

@@ -1,3 +1,23 @@
 
 <button (click) ="getUserDetails()" >
   getUsers</button>
+
+  <ol>
+
+ 
+
+     
+      <mat-card class="example-card" *ngFor=" let user of searchResult.items ">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title> {{user.login}}</mat-card-title>
+          
+        </mat-card-header>
+        <img mat-card-image class="image" [src]="user.avatar_url" alt="github use">
+        <mat-card-content>
+          
+        </mat-card-content>
+        
+      </mat-card>
+   
+  </ol>

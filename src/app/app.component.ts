@@ -18,8 +18,8 @@ export class AppComponent {
     
       alert(res);
       console.log(res);
-      this.id = res.id;
-      this.content = res.content;
+      //this.id = res.id;
+      //this.content = res.content;
      })
 
   }

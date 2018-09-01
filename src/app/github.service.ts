@@ -16,4 +16,10 @@ export class GithubService {
 
 
   }
+  public getMenuDetails()
+  {
+    
+    return this.httpclint.get("http://192.168.1.102:5000/getMenuDetails/")
+
+  }
 }
